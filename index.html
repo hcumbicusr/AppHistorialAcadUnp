@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Historial Académico</title>
+
+  <link rel='stylesheet' href='css/styles.css'>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    
+</head>
+
+<body>
+
+    <div class="login-card" style="text-align: center;width: 90%">
+        <h1>Historial Académico</h1>
+        <img src="img/unp_logo.png" alt="UNP" title="UNP" style="width: 40%"><br>
+        <div align="center" id="formulario">
+            <input type="number" id="user" name="user" required autofocus style="width: 64%" >
+            <span class="ui-dialog-title" id="msg_user" ></span>
+            <input type="text" id="password" name="password" placeholder="Contraseña" onfocus="cambiaPass(this)" maxlength="30" required style="width: 60%" >
+          <!-- input type="submit" id="login" name="login" class="login login-submit" value="login"-->
+          <button id="login" name="login" class="login login-submit" style="width: 60%"  >Acceder</button>
+        </div>
+
+            <div id="message" class="login-help">
+            </div>
+      </div>
+    
+    <script src='js/jquery_and_jqueryui.js'></script>
+    <script src='js/enc.js'></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

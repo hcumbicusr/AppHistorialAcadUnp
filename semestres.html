@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css" >
+        <link rel="stylesheet" href="css/bootstrap-theme.css" >
+    </head>
+    <body role="document">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="navbar">
+
+                        </button>
+                        <a href="#" class="navbar-brand">Historial Académico</a>
+                    </div>                
+                </div>
+
+            </div>
+        </div>
+        <div class="container" role="main">
+            <div class="page-header" style="margin-top: 70px">
+                <div class="col-sm-12">
+                    <div class="row form-group">
+                        <div class="panel panel-info text-center">
+                            Código Universitario: <label id="codigo" ></label><br>
+                            Alumno: <label id="alumno" ></label>
+                            <select id="semestres" class="form-control" style="width: 70%; margin: 0 auto">
+                                <option value="0">Selecciona Semestre</option>
+                                <option value="1">Ver todo</option>
+                                <!-- JS -->
+                            </select>
+                        </div>
+                    </div>
+                    <div id="img_load" class="img-responsive">
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-info" style="background-color: #E1FFFD">
+                                <div class="panel-heading text-center">
+                                    Cursos 
+                                </div>
+                                <div id="tabla" class="panel-body table-responsive">
+                                    <div class="dataTable_wrapper">
+                                        <table id="tblCursos" class="panel-info table table-striped table-bordered table-hover">
+                                            <thead class="panel-heading">
+                                                <tr>
+                                                    <th>Código</th>                                                                                                          
+                                                    <th>Curso</th>                                                                                        
+                                                    <th>Cred.</th>                                    
+                                                    <th>Nota</th> 
+                                                    <th>C.</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <script src='js/jquery_and_jqueryui.js'></script>
+        <script src='js/enc.js'></script>
+        <script src='js/GET.js'></script>
+        <script src="js/app.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
