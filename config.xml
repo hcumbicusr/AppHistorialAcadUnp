@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.unp.historial"
+    version   = "1.0.0">
+
+<preference name="phonegap-version" value="3.5.0" />
+<gap:plugin name="org.apache.cordova.device" />
+
+<!-- multiples plataformas -->
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
+	<gap:platform name="webos" />
+	<gap:platform name="symbian" />
+	<gap:platform name="blackberry" />
+	<gap:platform name="winphone" />
+	
+<name>Historial Académico UNP</name>
+
+<description>
+Proyecto destinado a la consulta de historial académico por parte de los alumnos de la UNP
+</description>
+
+<author href="https://twitter.com/hcumbicusr" email="hcumbicusr@gmail.com">
+hcumbicusr
+</author>
+
+<access origin="*"/>
+
+<feature name="NetworkStatus">
+      <param name="android-package" value="org.apache.cordova.NetworkManager"/>
+    </feature>
+	<feature name="SplashScreen">
+      <param name="android-package" value="org.apache.cordova.SplashScreen"/>
+    </feature>
+	
+<preference name="permissions" value="none"/>
+
+    <!-- to enable individual permissions use the following examples -->
+    <feature name="http://api.phonegap.com/1.0/network"/>
+	
+
+<icon src="res/icon/android/icon-96-xhdpi.png" />
+		<icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:density="hdpi" />
+		<icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+		<icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:density="xxhdpi" />
+
+<gap:splash src="res/screen/android/screen-xhdpi-portrait.png" />
+
+<gap:splash src="res/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi"/>
+<gap:splash src="res/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi"/>
+<gap:splash src="res/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi"/>
+<gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi"/>
+<gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xxhdpi"/>
+
+<gap:splash src="res/screen/android/screen-ldpi-landscape.png"  gap:platform="android" gap:density="ldpi" width="320" height="180" />
+<gap:splash src="res/screen/android/screen-mdpi-landscape.png"  gap:platform="android" gap:density="mdpi" width="480" height="270" />
+<gap:splash src="res/screen/android/screen-hdpi-landscape.png"  gap:platform="android" gap:density="hdpi" width="800" height="450" />
+<gap:splash src="res/screen/android/screen-xhdpi-landscape.png" gap:platform="android" gap:density="xhdpi" width="1280" height="720" />
+<gap:splash src="res/screen/android/screen-xhdpi-landscape.png" gap:platform="android" gap:density="xxhdpi" width="1280" height="720" />
+
+</widget>
