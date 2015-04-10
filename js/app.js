@@ -1,4 +1,16 @@
 $(document).ready(function() {
+    
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        navigator.splashscreen.hide();
+    }
+    
+    
   $("#message").css("display","none");
   $("#msg_user").css("display","none");
   
@@ -7,11 +19,11 @@ $(document).ready(function() {
   $("#user").attr("placeholder","Código Universitario");
   $("#user").attr("maxlength","10");
 
-  $('#user').keypress(function (){
-    //this.value = (this.value + '').replace(/[^0-9]/g, '');
-    if ((event.keyCode < 48) || (event.keyCode > 57))
-        event.returnValue = false;
-  });
+//  $('#user').keypress(function (){
+//    //this.value = (this.value + '').replace(/[^0-9]/g, '');
+//    if ((event.keyCode < 48) || (event.keyCode > 57))
+//        event.returnValue = false;
+//  });
 
   $('#user').blur(function (){
       if (this.value.length < 10)
